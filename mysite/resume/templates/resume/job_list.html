@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+    <h1>Resume</h1>
+    <ul>
+        {% for job in object_list %}
+            <head>
+                <b>{{job.job_name}} at {{job.business_name}}</b>
+                <em>{{job.year_worked}}</em>
+            </head>
+
+            <li>{{job.job_description}}</li>
+        {% endfor %}
+    </ul>
+    
+{% endblock %}
