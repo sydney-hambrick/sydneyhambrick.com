@@ -2,13 +2,9 @@
 
 {% load static %}
 
-<html>
-<head>
-    <link rel='stylesheet' type='text/css' href="{% static 'resume/style.css' %}">
-</head>
+    {% block headcontent %}
+    {% endblock %}
 
-
-<body>
     {% block navbar %}
     <div class ="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
@@ -30,5 +26,3 @@
         </ul>
         
     {% endblock %}
-</body>
-</html>
